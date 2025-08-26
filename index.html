@@ -11,16 +11,5 @@
 <body>
 <div id="root"></div>
 <script src="/BOT/umi.js"></script>
-<script>
-    // 从URL中提取pathname
-    var pathname = window.location.pathname;
-    
-    // 从pathname中移除仓库名称部分('/BOT')，得到应用内的相对路径
-    var segmentCount = 1; // 仓库名称占一个路径段
-    var location = pathname.replace(/\/BOT\//, '');
-    
-    // 跳转到主页，同时在URL中包含原始路径信息
-    window.location.href = '/BOT/#' + location + window.location.search;
-  </script>
 </body>
 </html>
